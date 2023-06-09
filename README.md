@@ -34,7 +34,7 @@ cd ../client && npm run dev
 - Vidoe
   - [All about Web Sockets](https://youtu.be/ZKEqqIO7n-k) 
   - [scaleing web sockets](https://youtu.be/xtCddOjITvo) 
-  - [Web Socket killer Web Transport](https://youtu.be/jvdg-jOYK5E)
+  - [Web Transport Protocol?](https://youtu.be/jvdg-jOYK5E)
 
 ---
 
