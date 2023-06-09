@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.3s ease;
+}
+
+body {
+    padding: 0 30px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.game-box {
+    border-radius: 15px;
+    margin: auto;
+    max-width: 1444px;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.game-box .game-ui {
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    width: 60%;
+}
+.game-ui .wifu {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.wifu img {
+    width: 100%;
+}
+.game-ui .gameHolder {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+}
+.gameHolder .chat,
+.gameHolder .game {
+    padding: 15px;
+    border-radius: 15px;
+}
+.gameHolder .game{
+    /* display: none; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    scale: 0;
+}
+.game button{
+    all: unset;
+    aspect-ratio: 1/1;
+    scale: 1;
+    transition: scale 0.3s ease;
+    cursor: pointer;
+}
+.game button:hover{
+    scale: 1.1;
+}
+.game button img{
+    width: 100%;
+}
+.gameHolder .chat {
+    border: 2px solid lightblue;
+    border-bottom-left-radius: 0;
+    background-color: rgb(219, 255, 253);
+    position: relative;
+    animation: fade 0.5s ease;
+}
+@keyframes fade {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.gameHolder .chat p{
+    padding-top: 5px;
+}
+
+.game-box .utils {
+    display: grid;
+    padding: 15px;
+    width: 40%;
+}
+
+.stats{
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    gap: 15px;
+    bottom: 15px;
+}
+.stats b{
+    color: rgb(155, 182, 192);
+}
+.stats b:nth-child(2){
+    color: lightgreen;
+}
+.utils .chat-box-holder {
+    border: 2px solid lightblue;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    overflow: hidden;
+    height: calc(100%);
+    scale: 0;
+}
+.chat-box .msg-holder{
+    padding: 15px;
+    max-height: calc(100vh - 600px);
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+.chat-box-holder .chat-input-holder{
+    padding: 15px;
+    background-color: rgb(219, 255, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.chat-input-holder input, .chat-input-holder button{
+    padding: 5px 10px;
+}
+.chat-input-holder input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    outline: 1px solid lightgrey;
+}
+.chat-input-holder button{
+    background-color: #05DDD5;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+#msg{
+    padding: 10px;
+    /* background-color: rgb(234, 255, 254); */
+    border-radius: 10px;
+    color: grey;
+    scroll-snap-align: start;
+}
+.fade-in{
+    animation: fade 0.3s ease-in-out;
+}
+.fade-in-long{
+    animation: fade 0.5s ease-in-out;
+}
+/* input, button {
+    padding: 10px;
+}
+
+.stats{
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    gap: 30px;
+}
+
+#output-holder, #online-holder, #score-holder{
+    padding: 10px;
+    background-color: lightgreen;
+} */

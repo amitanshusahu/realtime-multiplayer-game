@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- <div class="stats">
+      <div id="output-holder"> Output: <div id="output"></div> </div>
+      <span id="online-holder"> Online: <span id="online"></span> </span>
+      <span id="score-holder"> Score: <span id="score">0</span> </span>
+    </div>
+    
+    <input type="text" placeholder="rock, paper, sissor" id="input">
+    <button id="submit" >done</button> -->
+
+  <div class="game-box">
+
+
+
+
+
+    <div class="game-ui">
+
+      <div class="wifu">
+        <img src="./wifu.png" alt="wifu">
+      </div>
+
+      <div class="gameHolder">
+        <div class="chat">
+          <b>May Mishakhi</b>
+          <p id="output">Let's wait for someone to connect </p>
+
+          <div class="stats">
+            <b>Score: <span id="score">0</span></b>
+            <b>Online: <span id="online">0</span></b>
+          </div>
+        </div>
+
+        <div class="game" id="game">
+          <button class="game-btn" id="rock-btn"><img src="./rock.png" alt="rock"></button>
+          <button class="game-btn" id="paper-btn"><img src="./paper.png" alt="paper"></button>
+          <button class="game-btn" id="sissior-btn"><img src="./sissor.png" alt="sissor"></button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="utils">
+      <div class="chat-box-holder" id="chat-box-holder">
+
+        <div class="chat-box">
+          <div class="msg-holder" id="msg-holder">
+          </div>
+        </div>
+
+        <div class="chat-input-holder">
+          <input type="text" id="chat-input" placeholder="Type Message...">
+          <button id="send">send</button>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+</body>
+<script type="module" src="/main.js"></script>
+
+</html>
