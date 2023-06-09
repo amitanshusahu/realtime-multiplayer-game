@@ -32,7 +32,8 @@ cd ../client && npm run dev
 
 ## 📓 References
 - Vidoe
-  - [All about Web Sockets](https://youtu.be/ZKEqqIO7n-k) 
+  - [Web Socket, System Design](https://youtu.be/pnj3Jbho5Ck)
+  - [All about Web Sockets implementaion in node using socket.io](https://youtu.be/ZKEqqIO7n-k) 
   - [scaleing web sockets](https://youtu.be/xtCddOjITvo) 
   - [Web Transport Protocol?](https://youtu.be/jvdg-jOYK5E)
 
