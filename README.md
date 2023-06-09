@@ -29,6 +29,13 @@ cd server && npm start
 ```bash
 cd ../client && npm run dev
 ```
+
+## 📓 References
+- Vidoe
+  - [All about Web Sockets](https://youtu.be/ZKEqqIO7n-k) 
+  - [scaleing web sockets](https://youtu.be/xtCddOjITvo) 
+  - [Web Socket killer Web Transport](https://youtu.be/jvdg-jOYK5E)
+
 ---
 
 <h1 align="center"> Star the Repo ⭐ </h1>
