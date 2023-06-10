@@ -40,7 +40,7 @@ socket.on("get-room", (room) => {
 
 socket.on("joined-room", (roomid) => {
   console.log("joined a room as player 2", roomid);
-  wifuTalk("Yaa! you connected with a player. \n Now, make a choise")
+  wifuTalk("Yaa! you connected with a player. \n Now, make a choice")
   document.getElementById("game").style.scale = "1";
   document.getElementById("chat-box-holder").style.scale = "1";
 })
