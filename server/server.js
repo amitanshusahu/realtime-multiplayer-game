@@ -75,11 +75,11 @@ function updateGame(roomsArr, input, roomId, playerId) {
       if (roomsArr[i].p1.id === playerId) {
         roomsArr[i].p1.input = input;
         // notify Player 2 about Player 1's selection
-        io.to(roomsArr[i].p2.id).emit("player-selection", "Hurry up, P1 made her choise");
+        io.to(roomsArr[i].p2.id).emit("player-selection", "Hurry up, P1 made her choice");
       } else if (roomsArr[i].p2.id === playerId) {
         roomsArr[i].p2.input = input;
         // notify Player 1 about Player 2's selection
-        io.to(roomsArr[i].p1.id).emit("player-selection", "Hurry up, P2 made her choise");
+        io.to(roomsArr[i].p1.id).emit("player-selection", "Hurry up, P2 made her choice");
       }
 
       // check if both players have made their inputs
